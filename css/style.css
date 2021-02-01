@@ -166,13 +166,12 @@ a{
 
 fieldset {
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     width: 80%;
     margin-bottom: 1%;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
+    border: none;
     padding: 3%;
 }
 
@@ -180,7 +179,14 @@ legend {
     font-family: 'Unica One', cursive;
     font-size: 3vh;
     text-transform: uppercase;
-    padding: 5%;
+    padding: 10%;
+}
+
+.artiste_titre {
+    font-family: 'Unica One', cursive;
+    font-size: 3vh;
+    text-transform: uppercase;
+    padding: 10%;
 }
 
 

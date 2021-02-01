@@ -164,7 +164,7 @@ a{
     
 }
 
-fieldset {
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,18 +175,32 @@ fieldset {
     padding: 3%;
 }
 
-legend {
-    font-family: 'Unica One', cursive;
-    font-size: 3vh;
-    text-transform: uppercase;
-    padding: 10%;
-}
-
 .artiste_titre {
     font-family: 'Unica One', cursive;
     font-size: 3vh;
     text-transform: uppercase;
     padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.artiste_titre::before {
+    content: '';
+    display: block;
+    width: 5vh;
+    height: 0.5vh;
+    margin-right: 2vh;
+    background: black;
+}
+
+.artiste_titre::after {
+    content: '';
+    display: block;
+    width: 5vh;
+    height: 0.5vh;
+    margin-left: 2vh;
+    background: black;
 }
 
 
@@ -215,7 +229,6 @@ padding-right: 8vw;
 #footer_contain_btn {
 display: flex;
 justify-content: flex-end;
-align-items: center;
 height: 20vh;
 padding-left: 8vw;
 padding-right: 16vw;
